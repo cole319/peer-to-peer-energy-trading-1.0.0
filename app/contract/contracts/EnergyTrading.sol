@@ -64,23 +64,23 @@ contract EnergyTrading {
     }
 
     function getAllListingIds() public view returns (uint256[] memory) {
-    uint256[] memory listingIds = new uint256[](_listingIds.current());
-    for (uint256 i = 0; i < _listingIds.current(); i++) {
-        listingIds[i] = i+1;
+        uint256[] memory listingIds = new uint256[](_listingIds.current());
+        for (uint256 i = 0; i < _listingIds.current(); i++) {
+            listingIds[i] = i+1;
+        }
+        return listingIds;
     }
-    return listingIds;
-}
 
     function getListingDetails(uint256 listingId) public view returns (uint256, uint256, uint256, uint256, uint256, address, Status) {
-    Producer storage producer = producers[listingId];
-    return (
-        producer.listingId,
-        producer.units,
-        producer.pricePerUnit,
-        producer.listingPeriod,
-        producer.timestamp,
-        producer.producer,
-        producer.status
-    );
+        Producer storage producer = producers[listingId];
+        return (
+            producer.listingId,
+            producer.units,
+            producer.pricePerUnit,
+            producer.listingPeriod,
+            producer.timestamp,
+            producer.producer,
+            producer.status
+        );
     }
 }
