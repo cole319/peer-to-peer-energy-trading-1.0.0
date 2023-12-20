@@ -82,7 +82,7 @@ There will be five functions.
             items-center"
       >
         <div>
-          <h1 className="font-semibold text-3xl text-neutral-200">
+          <h1 className="font-semibold text-3xl text-teal-400">
             P2P Energy Trade
           </h1>
         </div>
@@ -127,29 +127,29 @@ There will be five functions.
           </div>
         </div>
 
-        <div className="py-20 px-80 text-center text-xl text-blue-400 flex flex-col space-y-8 ">
+        <div className="py-20 px-80 text-center text-xl text-blue-300 flex flex-col space-y-8 ">
           <Link href={isConnected == true ? "/AddListing" : "/default"}>
             <h1 className="hover:underline">
               Click here to Add Units of Electricity for Trading
             </h1>
           </Link>
-          <Link href="">
+          <Link href={isConnected == true ? "/BuyUnits" : "/default"}>
             <h1 className="hover:underline">
               Click here to Buy Electricity Units
             </h1>
           </Link>
-          <Link href="">
+          <Link href={isConnected == true ? "/CheckListing" : "/default"}>
             <h1 className="hover:underline">
               Click here to Check Listing of Electricity Units corresponding to
               Listing-ID
             </h1>
           </Link>
-          <Link href="">
+          <Link href={isConnected == true ? "/GetAllListing" : "/default"}>
             <h1 className="hover:underline">
               Click here to access Complete List
             </h1>
           </Link>
-          <Link href="">
+          <Link href={isConnected == true ? "/GetListingDetails" : "/default"}>
             <h1 className="hover:underline">
               Click here to access Listing Details corresponding to Listing-ID
             </h1>
