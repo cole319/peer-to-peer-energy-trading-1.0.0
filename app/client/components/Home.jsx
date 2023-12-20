@@ -45,6 +45,30 @@ export default function Home() {
     }
   };
 
+  /*
+
+There will be five functions. 
+1. Add Listing (for producers) :
+  params: i.units
+          ii.price/units
+          iii.listingPeriod
+
+2. Buy Units (for consumers):
+  params: i.listingId (key to the listing)
+          ii.units
+
+3. Check Listing (for anyone, esp consumers):
+  params: i.listingId
+                            
+4. Get All ListingIds :
+  params: NONE
+         
+5. Get Listing Details :
+  params: i.listingId
+         
+
+*/
+
   return (
     <div>
       <button className="py-2 px-3 bg-white text-black" onClick={connectWallet}>
