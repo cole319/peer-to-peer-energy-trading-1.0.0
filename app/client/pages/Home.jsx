@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
+import Footer from "@/components/Footer";
+
 export default function Home() {
   const [isConnected, setIsConnected] = useState(false);
   const [walletAddress, setWalletAddress] = useState("");
@@ -156,6 +158,7 @@ There will be five functions.
           </Link>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
