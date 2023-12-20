@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "ethers": "^5.7.2",
     "next": "14.0.4",
     "node": "^21.2.0",
     "react": "^18",

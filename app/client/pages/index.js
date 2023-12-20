@@ -1,12 +1,6 @@
 import React from "react";
-import Home from "./Home";
+import Home from "@/components/Home";
 
-const index = () => {
-  return (
-    <div className="min-h-screen bg-[#00060f]">
-      <Home />
-    </div>
-  );
-};
-
-export default index;
+export default function Main() {
+  return <Home />;
+}
