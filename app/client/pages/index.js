@@ -1,6 +1,10 @@
 import React from "react";
-import Home from "@/components/Home";
+import Home from "@/pages/Home";
 
 export default function Main() {
-  return <Home />;
+  return (
+    <div className="min-h-screen bg-slate-950 ">
+      <Home />
+    </div>
+  );
 }
